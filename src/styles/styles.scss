@@ -1,1 +1,40 @@
-@import "~ed-grid"; @import "~edteam-style-guides/edteam-style-guides"
+@import "config/config.scss";
+@import "banner.scss";
+@import "gridCountries.scss";
+
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
+    padding: 1em;
+}
+
+.card{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(#222, 0.5);
+    overflow: hidden;
+    &__image{
+        display: block;
+        
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    &__text{
+        width: 100%;
+        padding: 1em;
+    }
+    &-fresa{
+        background-color: pink;
+    }
+    &-limon{
+        background-color: yellow;
+    }
+    &-naranja{
+        background-color: orange;
+    }
+}

@@ -1,0 +1,26 @@
+
+.header{
+    width: 100%;
+    // display: flex;
+    background-color: $Dark_Blue;
+}
+.nav{
+    margin: 0 auto;
+    max-width: 1240px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__title{
+        color: $White;
+    }
+    &__mode{
+        display: flex;
+        height: 30px;
+        align-items: center;
+        color: $White;
+        svg{
+            margin-right: 10px;
+        }
+    }
+}
