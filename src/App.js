@@ -1,23 +1,22 @@
 import React from "react";
 import "./styles/styles.scss";
-import Pastel from "./components/Pastel";
 import Header from "./components/Header";
 import Grid from "./components/Grid";
+import {
+	BrowserRouter as Router,
+	Routes,
+	Route
+  } from "react-router-dom";
+
 const App = () => (
-	<>	
-
-
+	<Router>
 		<Header/>
-		<Grid/>
-		
-	</>
+		<Routes>
+			<Route path="/" element={<Grid peticion={"/all"} />} />
+		</Routes>
+				
+	</Router>
 );
+
 export default App;
 
-//Reglas
-//1. Toda etiqueta debe cerrarse
-// 2. Los componentes deben devolver
-//un solo elemento Padre
-// 3. Apoyarse de los Fragmenst cuando necesito devolver 2
-//elementos
-// 4. for => HtmlFor
