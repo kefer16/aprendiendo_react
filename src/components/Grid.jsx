@@ -5,8 +5,7 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 
 const Grid = ({ peticion }) => {
 	const [cards, setCards] = useState();
-	const url = `${process.env.REACT_APP_URL_API}${peticion}`;
-	console.log(url);
+	console.log(`${process.env.REACT_APP_URL_API}${peticion}`);
 	useEffect(() => {
 		get(url)
 			.then(({ data }) => setCards(data))
